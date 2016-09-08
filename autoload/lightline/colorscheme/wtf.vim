@@ -3,11 +3,6 @@
 " Maintainer:   Steven Stallion <sstallion@gmail.com>
 " License:      Simplified BSD License
 
-if exists('g:loaded_lightline_wtf')
-  finish
-endif
-let g:loaded_lightline_wtf = 1
-
 let s:save_cpo = &cpo
 set cpo&vim
 
@@ -91,9 +86,7 @@ let g:lightline#colorscheme#wtf#palette = lightline#colorscheme#fill({
       \ })
 
 " lightline incorrectly calculates the width of the window when a
-" vertical split is present, which results in improper highlighting.
-" To work around this issue, the following function call should be
-" added to .vimrc after lightline is configured;
+" vertical split is present, which results in improper highlighting;
 " see: https://github.com/itchyny/lightline.vim/issues/179.
 function! lightline#colorscheme#wtf#highlight()
   call wtf#highlight({
