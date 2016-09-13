@@ -56,7 +56,7 @@ lightline is configured:
 A more complete example configuration can be found
 [here](https://github.com/sstallion/dotfiles/blob/master/files/vim/after/plugin/lightline.vim).
 
-## Thanks
+## Acknowledgement
 
 Thanks to [Ben Ridder](https://github.com/brridder) for testing changes,
 providing great feedback, and stoically dealing with my penchant for amended
