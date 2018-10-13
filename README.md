@@ -1,15 +1,14 @@
 # lightline-wtf
 
-lightline-wtf is a [lightline.vim](https://github.com/itchyny/lightline.vim)
-color scheme based on [Whiskey Tango Focus](https://github.com/sstallion/vim-wtf).
+lightline-wtf is a [lightline.vim][1] color scheme based on
+[Whiskey Tango Focus][2].
 
-![screenshot](screenshot.png)
+![Screenshot](screenshot.png)
 
 ## Installation
 
-_lightline-wtf depends on the [lightline.vim](https://github.com/itchyny/lightline.vim)
-and [vim-wtf](https://github.com/sstallion/vim-wtf) plugins, which should be
-installed first using one of the documented methods._
+> **Note**: lightline-wtf depends on the [lightline.vim][1] and [vim-wtf][2]
+> plugins, which should be installed first using one of the documented methods.
 
 This plugin is compatible with several popular plugin managers:
 
@@ -46,18 +45,29 @@ To enable this color scheme, simply add the following to your `.vimrc`:
 ### Vertical Splits
 
 lightline incorrectly calculates the width of the window when a vertical split
-is present, which results in improper highlighting (see issue
-[#179](https://github.com/itchyny/lightline.vim/issues/179)). To work around
-this issue, the following function call should be added to `.vimrc` after
+is present, which results in improper highlighting (see issue [#179]). To work
+around this issue, the following function call should be added to `.vimrc` after
 lightline is configured:
 
     call lightline#colorscheme#wtf#highlight()
 
-A more complete example configuration can be found
-[here](https://github.com/sstallion/dotfiles/blob/master/files/vim/after/plugin/lightline.vim).
+A more complete example configuration can be found [here][3].
 
-## Acknowledgement
+## Contributing
 
-Thanks to [Ben Ridder](https://github.com/brridder) for testing changes,
-providing great feedback, and stoically dealing with my penchant for amended
-commits.
+Pull requests are welcome! If a problem is encountered using this plugin, please
+file an issue on [GitHub][4].
+
+## License
+
+Source code in this repository is licensed under a Simplified BSD License. See
+[LICENSE] for more details.
+
+[1]: https://github.com/itchyny/lightline.vim
+[2]: https://github.com/sstallion/vim-wtf
+[3]: https://github.com/sstallion/dotfiles/blob/master/files/vim/after/plugin/lightline.vim
+[4]: https://github.com/sstallion/lightline-vim/issues
+
+[LICENSE]: LICENSE
+
+[#179]: https://github.com/itchyny/lightline.vim/issues/179
